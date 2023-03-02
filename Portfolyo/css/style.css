@@ -1,0 +1,218 @@
+/* ! Resetleme İşlemleri */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+/* ! Genel İşlemler */
+
+body {
+  background-color: blueviolet;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+img {
+  width: 100%;
+  border-radius: 5px;
+  /* padding: 20px; */
+  transition: 0.3s;
+  object-fit: cover;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+.column-25 {
+  width: 25%;
+}
+
+.column-50 {
+  width: 50%;
+}
+
+.column-75 {
+  width: 75%;
+}
+
+.column-100 {
+  width: 100%;
+}
+
+/* ! Main div */
+.main-div {
+  text-align: center;
+  margin-top: 50px;
+  color: white;
+}
+
+.main-div h1 {
+  font-size: 40px;
+}
+
+.main-div p {
+  margin-top: 15px;
+}
+
+.fa-brands {
+  font-size: 35px;
+  cursor: pointer;
+  margin-top: 20px;
+  padding-inline: 20px;
+  transition: 0.7s;
+}
+
+.fa-brands:hover {
+  color: rgb(93, 184, 254);
+}
+
+.animate {
+  animation: 3s animate infinite;
+}
+
+@keyframes animate {
+  0% {
+    color: white;
+  }
+  50% {
+    color: blueviolet;
+  }
+  100% {
+    color: white;
+  }
+}
+
+.container {
+  background-color: white;
+  width: 80%;
+  margin: 55px auto;
+  padding: 80px;
+  overflow: hidden;
+}
+
+.content {
+  width: 100%;
+}
+
+.column-100,
+.column-75,
+.column-50,
+.column-25 {
+  float: left;
+  padding: 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.deneyim {
+  margin-bottom: 50px;
+  padding: 20px;
+}
+
+.column-25 select {
+  width: 80%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+
+.buton {
+  background-color: blueviolet;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  margin-top: 40px;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.buton:hover {
+  background-color: white;
+  color: blueviolet;
+  border: 1px solid blueviolet;
+}
+
+.maliyet {
+  margin-bottom: 50px;
+}
+
+.column-50 input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+
+.column-50 iframe {
+  width: 100%;
+}
+
+/* ! Responsive */
+
+@media screen and (max-width: 1100px) {
+  .container {
+    width: 90%;
+  }
+
+  .column-25,
+  .column-75 {
+    width: 50%;
+  }
+
+  .column-25 select {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 80%;
+    text-align: center;
+  }
+
+  .column-100,
+  .column-75,
+  .column-50,
+  .column-25 {
+    width: 100%;
+  }
+
+  .column-25 select {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    width: 90%;
+    text-align: center;
+  }
+
+  .column-100,
+  .column-75,
+  .column-50,
+  .column-25 {
+    width: 100%;
+  }
+
+  .column-25 select {
+    width: 100%;
+  }
+}
